@@ -1,11 +1,14 @@
+import Nav from "./components/Nav";
+import About from "./components/About";
 import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState("Pan");
 
   return (
     <>
-      <h1>Hello</h1>
+      <Nav />
+      <About name={name} />
     </>
   );
 }

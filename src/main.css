@@ -1,0 +1,12 @@
+.nav {
+  background-color: green;
+  height: 100px;
+}
+.about {
+  background-color: yellow;
+  height: 200px;
+}
+.hero {
+  background: blue;
+  height: 100px;
+}
