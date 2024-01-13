@@ -3,12 +3,15 @@ import About from "./components/About";
 import { useState } from "react";
 
 function App() {
-  const [name, setName] = useState("Pan");
-
+  const [isOpen, setIsOpen] = useState(false);
+  const open = () => {
+    setIsOpen(true);
+  };
   return (
     <>
       <Nav />
-      <About name={name} />
+      <About isOpen={isOpen} />
+      <button onClick={open}>Please Khant</button>
     </>
   );
 }

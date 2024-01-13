@@ -1,11 +1,11 @@
 import React from "react";
 import Hero from "./Hero";
 
-const About = ({ name }) => {
+const About = ({ isOpen }) => {
   return (
     <div className="about">
       About --
-      <Hero name={name} />
+      <Hero isOpen={isOpen} />
     </div>
   );
 };

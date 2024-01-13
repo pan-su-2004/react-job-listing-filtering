@@ -1,7 +1,6 @@
 import React from "react";
 
-const Hero = ({ name }) => {
-  return <div className="hero">{name}</div>;
+const Hero = ({ isOpen }) => {
+  return <div className="hero">{isOpen ? "Hok tl" : "ma HOk bu"}</div>;
 };
-
 export default Hero;
