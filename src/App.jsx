@@ -1,19 +1,12 @@
-import Nav from "./components/Nav";
-import About from "./components/About";
-import { useState } from "react";
+import React from "react";
+import Card from "./components/card/Card";
 
-function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const open = () => {
-    setIsOpen(true);
-  };
+const App = () => {
   return (
-    <>
-      <Nav />
-      <About isOpen={isOpen} />
-      <button onClick={open}>Please Khant</button>
-    </>
+    <div>
+      <Card />
+    </div>
   );
-}
+};
 
 export default App;
