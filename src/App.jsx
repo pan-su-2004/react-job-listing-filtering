@@ -3,7 +3,7 @@ import Card from "./components/card/Card";
 
 const App = () => {
   return (
-    <div>
+    <div className="p-5 bg-bgColor font-sans">
       <Card />
     </div>
   );
