@@ -11,8 +11,7 @@ export default {
         veryDark: "hsl(180, 14%, 20%)",
       },
       fontFamily: {
-        // basicFont: ['"ui-sans-serif"', '"League Spartan"'],
-        sans: "Helvetica, Arial, sans-serif",
+        "league-spartan": ["League Spartan", "sans-serif"],
       },
     },
   },
