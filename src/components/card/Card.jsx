@@ -1,20 +1,20 @@
 import React from "react";
 import FavIcon from "../../images/photosnap.svg";
 
-const Card = () => {
+const Card = ({ title, profile }) => {
   return (
-    <div className="flex flex-col rounded-md p-7 shadow-2xl bg-white gap-5">
+    <div className="flex flex-col rounded-md p-7 shadow-2xl bg-white gap-5 mt-12">
       <div className="flex flex-col gap-4">
         <div>
-          <img src={FavIcon} alt="" className="-mt-14" />
+          <img src={FavIcon} alt="" className="-mt-16 w-20" />
         </div>
         <div className="flex flex-col gap-2">
-          <h4 className="text-primary text-xl font-bold">Account</h4>
-          <h3 className="text-black text-xl font-bold">Developer</h3>
-          <ul className="items flex justify-between text-gray-500 text-xl">
+          <h4 className="text-primary text-xl font-bold">{profile}</h4>
+          <h3 className="text-black text-xl font-bold">{title}</h3>
+          <ul className="flex justify-between text-gray-500 text-xl gap-5">
             <li>2days ago</li>
-            <li>Part time</li>
-            <li>USA only</li>
+            <li className="list-disc">Part time</li>
+            <li className="list-disc">USA only</li>
           </ul>
         </div>
       </div>
