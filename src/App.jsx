@@ -20,13 +20,11 @@ const App = () => {
     },
   ];
 
-  return (
-    <div className="p-5 bg-bgColor font-league-spartan">
-      {data.map((item) => {
-        return <Card title={item.title} profile={item.profile} />;
-      })}
-    </div>
-  );
+  const card = data.map((item) => {
+    return <Card key={item.title} title={item.title} profile={item.profile} />;
+  });
+
+  return <div className="p-5 bg-bgColor font-league-spartan">{card}</div>;
 };
 
 export default App;
