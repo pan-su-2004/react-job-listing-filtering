@@ -1,30 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./components/card/Card";
+import { data } from "autoprefixer";
 
 const App = () => {
-  const data = [
-    {
-      title: "JavaScript Developer",
-      profile: "MyHome",
-    },
-    {
-      title: "Frontend Developer",
-      profile: "Shortly",
-    },
-    {
-      title: "UI/UX Designer",
-      profile: "Account",
-    },
-    {
-      title: " Designer",
-    },
-  ];
+  const [cardData, setCardData] = useState();
 
-  const card = data.map((item) => {
-    return <Card key={item.title} title={item.title} profile={item.profile} />;
+  useEffect(() => {
+    fetch("./data.json")
+      .then((res) => res.json())
+      .then((data) => setCardData(data));
+  }, []);
+
+  cardData?.map((card) => {
+    console.log(card.company);
   });
 
-  return <div className="p-5 bg-bgColor font-league-spartan">{card}</div>;
+  return <div className="p-5 bg-bgColor font-league-spartan"></div>;
 };
 
 export default App;
