@@ -27,7 +27,11 @@ const App = () => {
     );
   });
   return (
-    <div className="p-5 bg-bgColor font-league-spartan">{cardElements}</div>
+    <div className="p-5 bg-bgColor font-league-spartan">
+      <div className="rounded-md p-7 shadow-2xl bg-white"></div>
+
+      {cardElements}
+    </div>
   );
 };
 

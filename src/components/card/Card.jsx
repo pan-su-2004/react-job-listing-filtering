@@ -14,10 +14,10 @@ const Card = (props) => {
   } = props;
 
   return (
-    <div className="flex flex-col rounded-md p-7 shadow-2xl bg-white gap-5 mt-12">
-      <div className="flex flex-col gap-4">
+    <div className=" lg:w-4/5 mx-auto lg:flex-row lg:items-center flex flex-col rounded-md p-7 shadow-2xl bg-white gap-5 mt-12">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
         <div>
-          <img src={logo} alt="" className="-mt-16 w-20" />
+          <img src={logo} alt="" className="-mt-16 w-20 lg:mt-auto " />
         </div>
         <div className="flex flex-col gap-2">
           <h4 className="text-primary text-xl font-bold">{company}</h4>
